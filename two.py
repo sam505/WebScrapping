@@ -5,6 +5,10 @@ from bs4 import BeautifulSoup
 
 
 def main():
+    """
+    Dealing with errors and exceptions such as HTTP and URL errors
+    :return:
+    """
     try:
         html = urlopen("http://pythonscraping.com/pages/page1.html")
     except HTTPError as e:

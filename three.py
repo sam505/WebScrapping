@@ -4,6 +4,11 @@ from bs4 import BeautifulSoup
 
 
 def get_title(url):
+    """
+    Getting the title of a webpage
+    :param url:
+    :return:
+    """
     try:
         html = urlopen(url)
         print(html.read())
