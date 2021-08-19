@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 def get_title(url):
     try:
         html = urlopen(url)
+        print(html.read())
     except HTTPError as e:
         return None
 
@@ -20,7 +21,7 @@ def get_title(url):
 
 
 def main():
-    url = "http://pythonscraping.com/pages/page1.html"
+    url = "https://maina-samuel.azurewebsites.net/"
     title = get_title(url)
     if title is None:
         print("No title was found")
